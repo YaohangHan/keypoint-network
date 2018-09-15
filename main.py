@@ -149,7 +149,7 @@ class Transformer(object):
 
   def __read_projection_matrix(self, filename):
     if not os.path.exists(filename):
-      filename = "/cns/vz-d/home/supasorn/datasets/cars/projection.txt"
+      filename = "E:/car_data/cars_with_keypoints/projection.txt"
     with open(filename, "r") as f:
       lines = f.readlines()
     return self.__get_matrix(lines)
